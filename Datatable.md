@@ -44,7 +44,8 @@ For Each table As HtmlNode In tables
         	Dim cells As HtmlNodeCollection = row.SelectNodes("td")
         	If cells IsNot Nothing Then
             	For Each cell In cells
-					Dim cellvalue = cell.InnerText.Replace("�","").Replace("&nbsp;","").Replace("&amp;","&")
+                    'If inner text has garbage values  replace it with respect to the values.
+	            Dim cellvalue = cell.InnerText.Replace("�","").Replace("&nbsp;","").Replace("&amp;","&")
                     dr("Column"+ index.ToString) = cellvalue
             	    Index = Index+1
               	Next
