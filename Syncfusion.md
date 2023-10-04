@@ -1,7 +1,9 @@
-```
-
+# Code Snippet for Quick Dev
 
 ## SyncFusion to Update the word document and convert to pdf.
+
+```vb.net
+
 Try
 
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("LicenseKey")
